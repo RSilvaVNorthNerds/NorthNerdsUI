@@ -24,3 +24,34 @@ export const Primary: Story = {
     children: "Button",
   },
 };
+
+export const Secondary: Story = {
+  args: {
+    variant: "secondary",
+    size: "default",
+    children: "Button",
+  },
+};
+
+export const StyledButton: Story = {
+  args: {
+    variant: "default",
+    size: "default",
+    children: "Button",
+    style: {
+      backgroundColor: "red",
+      color: "white",
+      border: "none",
+      padding: "10px 20px",
+      borderRadius: "5px",
+      cursor: "pointer",
+      transition: "background-color 0.3s ease",
+      fontSize: "16px",
+      fontWeight: "bold",
+      textAlign: "center",
+      textTransform: "uppercase",
+      letterSpacing: "1px",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
+    },
+  },
+};
